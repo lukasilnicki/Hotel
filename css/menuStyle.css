@@ -1,0 +1,195 @@
+/*
+CSS dla MENU
+*/
+menu
+{
+   position: relative;
+   left: 50px;
+   top: 150px;
+   width: 250px;
+   height: 650px;
+}
+
+.menuMain
+{
+    position: absolute;
+    width: 200px;
+    height: 500px;
+    top: 27px;
+    background-color: #fff;
+    opacity: 0.8;
+    border-left: solid 2px #000;
+}
+
+.menuTop
+{
+    position: absolute;
+    width: 150px;
+    height: 25px;
+    left: 67px;
+    background-color: #fff;
+    opacity: 0.8;
+    border-top: solid 2px #000;
+}
+
+.menuBottom
+{
+    position: absolute;
+    width: 150px;
+    height: 25px;
+    left: 67px;
+    top: 527px;
+    background-color: #fff;
+    opacity: 0.8;
+    border-bottom: solid 2px #000;
+}
+
+.square1
+{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    opacity: 0.8;
+    border-left: solid 2px #000;
+    border-top: solid 2px #000;
+    border-top-left-radius: 40%;
+}
+
+.square2
+{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 217px;
+    background-color: #fff;
+    opacity: 0.8;
+    border-top: solid 2px #000;
+    border-top-right-radius: 40%;
+}
+
+.square3
+{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 527px;
+    left: 217px;
+    background-color: #fff;
+    opacity: 0.8;
+    border-bottom: solid 2px #000;
+    border-bottom-right-radius: 40%;
+}
+
+.square4
+{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 527px;
+    background-color: #fff;
+    opacity: 0.8;
+    border-left: solid 2px #000;
+    border-bottom: solid 2px #000;
+    border-bottom-left-radius: 40%;
+}
+
+ol
+{
+    font-family: 'Vollkorn', serif;
+    display: inline-block;
+    list-style-type: none;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 16px;
+    height: 2em;
+    line-height: 2em;
+    padding: 20px 0 0 0;
+    margin: 0;
+}
+
+ol > li
+{
+    display: block;
+    position: absolute;
+    color: #000;
+    font-weight: 700;
+    width: 200px;
+    text-align: center;
+}
+
+ol a
+{
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+
+ol > li > ul 
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ol > li > ul
+{
+    transition: width 0.5s;
+    width: 0; 
+    height: 0;
+    overflow: hidden;
+}
+
+ol > li:hover > ul
+{
+    position: absolute;
+    display: inline-block;
+    width: 230px;
+    height: auto;
+    text-align: center;
+}
+
+ol > li > ul > li > a       /* Bez borderów, ponieważ przesuwają ten block względem rodzica. Rozwiązanie na potem: ustawić border u rodzica, ale tak samo przezroczyste jak tło. */
+{
+    width: 200px;
+    margin-left: 35px;
+    background-color: #fff; 
+}
+
+ol > li
+{
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+
+ol > li:hover
+{
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+ol > li > ul > li > a
+{
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+
+ol > li > ul > li > a:hover
+{
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+.szlaczekTop
+{
+    position: absolute;
+    width: 110px;
+    left: 20px;
+}
+
+.szlaczekBottom
+{
+    position: absolute;
+    width: 110px;
+    left: 20px;
+}
