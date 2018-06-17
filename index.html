@@ -10,33 +10,47 @@
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
         <link rel="stylesheet" href="style.css" type="text/css" />
-        <link rel="stylesheet" href="css/menuStyle.css" type="text/css" />
+        <!--<link rel="stylesheet" href="menuStyle.css" type="text/css" /> -->
+        <link rel="stylesheet" href="menuStyle_1.css" type="text/css" />
+        <link rel="stylesheet" href="presentationStyle.css" type="text/css" />
+        <link rel="stylesheet" href="timeLineStyle.css" type="text/css" />
 
-        <script type="text/javascript" src="js/timeLine.js" async></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/timeLine.js"></script>
+        <script type="text/javascript" src="js/menu.js"></script>
 
     </head>
     <body>
         <menu>
-            <div class="menuTop"><img class="szlaczekTop" src="images/szlaczek.jpg" alt="szlaczekTop"></div>
-            
-            <div class="menuMain">
-                <ol>
-                    <li><a href="#">nasza historia</a>
-                        <ul>
-                            <li><a href="#">oś czasu</a></li>
-                            <li><a href="#">w kilku słowach...</a></li>
-                        </ul>
-                    </li>
-                    
-                </ol>
+            <div id="menuMain">
+                <div id="menuWindow">
+                    <ol>
+                        <li><a href="#">parę słów o nas</a>
+                            <ul>
+                                <li><a href="#">nasz zespół</a></li>
+                                <li><a href="#">oś czasu</a></li>
+                            </ul>
+                        </li>
+                        <li class="border"></li>
+                    </ol>
+                </div>
+            </div>
+        </menu>
+
+        <div id="timeLineWrapper">
+            <div id="timeLineWrapper2">
+                <div id="timeLine">
+                    <div id="point"></div>
+                </div> 
             </div>
             
-            <div class="menuBottom"><img class="szlaczekBottom" src="images/szlaczek_bottom.jpg" alt="szlaczekBottom"></div>
-            <div class="square1"></div>
-            <div class="square2"></div>
-            <div class="square3"></div>
-            <div class="square4"></div>
-        </menu>
-        
+            <div id="section1">
+                <div id="picture1"></div>
+                <div class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie nisl vitae sapien                          consectetur lobortis. Aliquam tincidunt sodales nunc, nec ornare nisi vestibulum sit amet.                           Morbi id pulvinar erat. Cras dapibus laoreet lobortis. Aenean nisi urna, interdum vitae urna quis                    , porttitor eleifend odio. Nam ut felis a magna porta vulputate ut non eros. Cras sit amet                           faucibus diam, vitae viverra est.
+                </div>
+            </div>
+        </div>
+   
     </body>
 </html>

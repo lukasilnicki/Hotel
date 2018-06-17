@@ -1,0 +1,242 @@
+/*
+CSS dla MENU
+*/
+menu
+{
+   position: relative;
+   top: 100px;
+   width: 200px;
+   height: 550px;
+}
+
+#wrapper
+{
+    width: 200px;
+    height: 550px;
+}
+
+#menuMain
+{
+    position: absolute;
+    width: 200px;
+    height: 500px;
+    top: 27px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;     
+    transition: background-color 1s;
+    opacity: 0.8;
+    border-left: solid 2px #000;
+    border-right: solid 2px #000;
+}
+
+.menuMainBackground
+{
+    background-color: #fff7e6;
+}
+
+#menuTop
+{
+    position: absolute;
+    width: 150px;
+    height: 25px;
+    left: 67px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;     
+    transition: background-color 1s;
+    opacity: 0.8;
+    border-top: solid 2px #000;
+}
+
+.menuTopBackground
+{
+    background-color: #fff7e6;
+}
+
+#menuBottom
+{
+    position: absolute;
+    width: 150px;
+    height: 25px;
+    left: 67px;
+    top: 527px;
+     -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;     
+    transition: background-color 1s;
+    opacity: 0.8;
+    border-bottom: solid 2px #000;
+}
+
+.menuBottomBackground
+{
+    background-color: #fff7e6;
+}
+
+#square1
+{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+     -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;     
+    transition: background-color 1s;
+    opacity: 0.8;
+    border-left: solid 2px #000;
+    border-top: solid 2px #000;
+    border-top-left-radius: 40%;
+}
+
+.square1Background
+{
+    background-color: #fff7e6;
+}
+
+#square2
+{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 217px;
+     -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;     
+    transition: background-color 1s;
+    opacity: 0.8;
+    border-top: solid 2px #000;
+    border-right: solid 2px #000;
+    border-top-right-radius: 40%;
+}
+
+.square2Background
+{
+    background-color: #fff7e6;
+}
+
+#square3
+{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 527px;
+    left: 217px;
+     -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;     
+    transition: background-color 1s;
+    opacity: 0.8;
+    border-bottom: solid 2px #000;
+    border-right: solid 2px #000;
+    border-bottom-right-radius: 40%;
+}
+
+.square3Background
+{
+    background-color: #fff7e6;
+}
+
+#square4
+{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 527px;
+     -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;     
+    transition: background-color 1s;
+    opacity: 0.8;
+    border-left: solid 2px #000;
+    border-bottom: solid 2px #000;
+    border-bottom-left-radius: 40%;
+}
+
+.square4Background
+{
+    background-color: #fff7e6;
+}
+
+ol
+{
+    font-family: 'Vollkorn', serif;
+    display: inline-block;
+    list-style-type: none;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 16px;
+    height: 2em;
+    line-height: 2em;
+    padding: 20px 0 0 0;
+    margin: 0;
+}
+
+ol > li
+{
+    display: block;
+    position: absolute;
+    color: #000;
+    font-weight: 700;
+    width: 200px;
+    text-align: center;
+}
+
+ol > li > a
+{
+    display: inline-block;
+    width: 200px;
+}
+
+ol a
+{
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+
+ol > li > ul 
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ol > li > ul
+{
+    transition: width 0.5s;
+    width: 0; 
+    height: 0;
+    overflow: hidden;
+}
+
+ol > li:hover > ul
+{
+    position: absolute;
+    display: inline-block;
+    width: 150px;
+    height: auto;
+    text-align: center;
+    border-bottom-right-radius: 7%;
+    border-top-right-radius: 7%;     
+}
+
+ol > li > ul > li > a       /* Bez borderów, ponieważ przesuwają ten block względem rodzica. Rozwiązanie na potem: ustawić border u rodzica, ale tak samo przezroczyste jak tło. */
+{
+    width: 150px;
+    background-color: #fff7e6;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+
+
+ol > li > ul > li > a:hover
+{
+    cursor: pointer;
+    background-color: #ffe7b3;
+}
+
+ol > li
+{
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+
+ol > li:hover
+{
+    cursor: pointer;
+    background-color: #ffe7b3;
+}

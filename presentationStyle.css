@@ -1,0 +1,10 @@
+.presentation
+{
+    position: absolute;
+    border: solid 2px;
+    border-radius: 3%;
+    height: 550px;
+    width: 700px;
+    top: 100px;
+    left: 420px;
+}
